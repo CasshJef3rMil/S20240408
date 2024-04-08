@@ -1,3 +1,6 @@
+using S20240408.LogicaDeNegocio;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
