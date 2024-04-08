@@ -1,5 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using S20240408.AccesoADatos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +14,7 @@ namespace S20240408.LogicaDeNegocio
     {
         public static IServiceCollection AddBLDependecies(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddBLDependecies(configuration);
+            services.AddDALDependecies(configuration);
             services.AddScoped<SpersonaBL>();
             return services;
         }

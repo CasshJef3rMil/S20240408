@@ -21,14 +21,15 @@ namespace S20240408.EntidadesDeNegocio
         [Required]
         [StringLength(60)]
         public string Apellido { get; set; }
+
         [Required]
         public DateTime FechaNacimiento { get; set; }
 
+        // Eliminar [StringLength] aquí
         [Required]
-        [StringLength(60)]
         public decimal Sueldo { get; set; }
 
         public byte Estatus { get; set; }
-
     }
+
 }
