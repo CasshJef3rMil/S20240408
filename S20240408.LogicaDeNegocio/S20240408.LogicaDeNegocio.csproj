@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\S20240408.AccesoADatos\S20240408.AccesoADatos.csproj" />
+    <ProjectReference Include="..\S20240408.EntidadesDeNegocio\S20240408.EntidadesDeNegocio.csproj" />
+  </ItemGroup>
+
 </Project>
