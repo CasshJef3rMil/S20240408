@@ -11,6 +11,6 @@ namespace S20240408.AccesoADatos
     public class AppDbContext : DbContext
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
-        public DbSet<SPersona> Spersona { get; set; }
+        public DbSet<SPersona> Spersonas { get; set; }
     }
 }
